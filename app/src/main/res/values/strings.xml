@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ex006</string>
+    <string name="number_label">Número: </string>
+    <string name="centena">Centena: </string>
+    <string name="dezena">Dezena: </string>
+    <string name="unidade">Unidade: </string>
+    <string name="button_label">Unidade: </string>
+    <string name="author_data">Renan Santos Carvalho\n1110482313034</string>
+</resources>
