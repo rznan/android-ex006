@@ -6,4 +6,5 @@
     <string name="unidade">Unidade: </string>
     <string name="button_label">Unidade: </string>
     <string name="author_data">Renan Santos Carvalho\n1110482313034</string>
+    <string name="error_message">N deve estar entre 100 e 999 </string>
 </resources>

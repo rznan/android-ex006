@@ -1,5 +1,6 @@
 package br.com.renan.ex006;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvResultC;
     TextView tvResultD;
     TextView tvResultU;
+    TextView tvError;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,12 +37,17 @@ public class MainActivity extends AppCompatActivity {
         tvResultC = findViewById(R.id.tvResultC);
         tvResultD = findViewById(R.id.tvResultD);
         tvResultU = findViewById(R.id.tvResultU);
+        tvError = findViewById(R.id.tvError);
 
         findViewById(R.id.button).setOnClickListener(e -> calculateResult());
     }
 
     private void calculateResult() {
         int number = Integer.parseInt(etNumber.getText().toString());
+        if(number < 100 || number >= 1000) {
+            tvError.setText(R.string.error_message);
+            return;
+        }
         tvResultU.setText(String.valueOf(number%10));
         number /= 10;
         tvResultD.setText(String.valueOf(number%10));

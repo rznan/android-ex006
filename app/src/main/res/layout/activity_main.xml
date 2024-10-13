@@ -10,9 +10,11 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="246dp"
+        android:layout_width="0dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="14dp"
         android:text="@string/author_data"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,7 +70,7 @@
         android:id="@+id/tvNumber4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="18dp"
         android:text="@string/unidade"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="@+id/tvNumber3"
@@ -97,23 +99,46 @@
         android:id="@+id/tvResultU"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="34sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvResultU2"
+        app:layout_constraintEnd_toStartOf="@+id/tvResultU2"
+        app:layout_constraintStart_toStartOf="@+id/tvResultU2" />
+
+    <TextView
+        android:id="@+id/tvResultU2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="41dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="18dp"
         android:textSize="34sp"
         app:layout_constraintStart_toEndOf="@+id/tvNumber4"
         app:layout_constraintTop_toBottomOf="@+id/tvResultD" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultU" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="74dp"
         android:layout_marginStart="70dp"
+        android:layout_marginTop="110dp"
         android:layout_marginEnd="70dp"
-        android:layout_marginBottom="47dp"
+        android:layout_marginBottom="108dp"
         android:text="@string/button_label"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumber4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
